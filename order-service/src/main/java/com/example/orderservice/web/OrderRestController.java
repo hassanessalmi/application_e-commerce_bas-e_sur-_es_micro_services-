@@ -30,7 +30,7 @@ public class OrderRestController {
         this.productRestClientService = productRestClientService;
     }
     @GetMapping("/fullOrder/{id}")
-    public Order getOrder(@PathVariable Long id){
+       public Order getOrder(@PathVariable Long id){
 
       Order order=orderRepository.findById(id).get();
 
